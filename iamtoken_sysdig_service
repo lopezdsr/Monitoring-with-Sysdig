@@ -44,7 +44,7 @@ Complete the tasks listed in the following:
 
 ### Example request
 
-Here is an example POST (using cURL) command to get a list of teams and their IDs for the authorized user, run:
+Here is an example POST (using cURL) command to get a list of teams and their IDs for the authorized user:
 
 ```
 curl -v -H "Authorization: Bearer IBM_IAM_TOKEN_HERE"   -H "IBMInstanceID: INSTANCE_ID_HERE"   https://eu-gb.monitoring.test.cloud.ibm.com/api/teams
@@ -116,10 +116,59 @@ curl -v -H "Authorization: Bearer IBM_IAM_TOKEN_HERE"   -H "IBMInstanceID: INSTA
 }
 ```
 
-## Example data requests and responses
+## Making data requests
 
-Here is an example POST (using cURL) command for making a data request:
+### Example request
+
+Given below is an example POST (using cURL) command for making a data request to get the dashboards associated with a given team:
 
 ```
 curl -v -H "Authorization: Bearer IBM_IAM_TOKEN_HERE"  -H "IBMInstanceID: INSTANCE_ID_HERE"  -H "SysdigTeamID: SYSDIG_TEAM_ID_HERE"   https://eu-gb.monitoring.test.cloud.ibm.com/api/v3/dashboards
+```
+### Example response
+
+A redacted example response is given below:
+
+```
+{
+  "dashboards": [
+    {
+      "id": 3442,
+      "teamId": 1478,
+      "userId": 1267,
+      "name": "New Dashboard",
+      "panels": [
+        {
+          ...
+      ],
+      "shared": false,
+      "public": false,
+      "version": 1,
+      "createdOn": 1602710683000,
+      "modifiedOn": 1602710683000,
+      "description": "",
+      "layout": [
+        {
+          "panelId": 1,
+          "x": 0,
+          "y": 0,
+          "w": 8,
+          "h": 8
+        }
+      ],
+      "sharingSettings": [],
+      "publicToken": "abc123",
+      "favorite": false,
+      "schema": 3,
+      "username": "User Name (your_name@account.com)",
+      "permissions": [
+        "dashboards.read",
+        "dashboards.sharing",
+        "dashboards.delete",
+        "dashboards.edit",
+        "dashboards.transfer"
+      ]
+    }
+  ]
+}
 ```
