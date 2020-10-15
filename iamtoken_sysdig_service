@@ -31,7 +31,7 @@ IBM Cloud users and service ID can use IAM tokens to authenticate with Sysdig se
 Complete the tasks listed in the following:
 * [Working with API tokens](https://cloud.ibm.com/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-api_token)
 * [Granting permissions to launch the Sysdig UI or to make REST API calls](https://cloud.ibm.com/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-iam_grant)
-* Sysdig team ID. See [getting-the-sysdig-team-ID]
+* Sysdig team ID. For more information, see [Getting the Sysdig team ID](/docs/Monitoring-with-Sysdig?topic=iamtoken_sysdig_service#Getting_the_Sysdig_team_ID).
 
 ## HTTP authorization request headers
 
