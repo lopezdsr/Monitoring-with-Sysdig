@@ -24,7 +24,7 @@ subcollection: Monitoring-with-Sysdig
 
 # Using IAM API tokens to authenticate Sysdig services
 
-IBM Cloud users and service ID can use IAM tokens to authenticate with Sysdig services while using the Sysdig Python scripts or the REST APIs to automate regular monitoring tasks, such as creating dashboards or alerts. The caller can optionally indicate the team they are attempting to access, as opposed to defaulting to the Monitoring team.
+IBM Cloud users and service ID can use IAM tokens to authenticate with Sysdig services while using the Sysdig Python scripts or the REST APIs to automate regular monitoring tasks, such as creating dashboards or alerts. The caller can optionally indicate the team they are attempting to access, as opposed to defaulting to the Monitoring Operations team.
 
 ## Prerequisites
 
