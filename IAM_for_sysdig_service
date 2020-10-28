@@ -24,7 +24,7 @@ subcollection: Monitoring-with-Sysdig
 
 # Using IAM API tokens to authenticate Sysdig services
 
-IBM Cloud users and service ID can use IAM tokens to authenticate with Sysdig services while using the Sysdig Python scripts or the REST APIs to automate regular monitoring tasks, such as creating Dashboards or alerts. The caller can optionally indicate the team they are attempting to access, as opposed to defaulting to the Monitoring team.
+IBM Cloud users and service ID can use IAM tokens to authenticate with Sysdig services while using the Sysdig Python scripts or the REST APIs to automate regular monitoring tasks, such as creating dashboards or alerts. The caller can optionally indicate the team they are attempting to access, as opposed to defaulting to the Monitoring team.
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ Complete the tasks listed in the following:
 
 * [Working with API tokens](/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-api_token)
 * [Granting permissions to launch the Sysdig UI or to make REST API calls](/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-iam_grant)
-* Retrieve the Sysdig team ID. For more information, see [Getting the Sysdig team ID](#getting-the-sysdig-team-ID)
+* Retrieve the Sysdig team ID. For more information, see [Retrieving the Sysdig team ID](#retrieving-the-sysdig-team-ID)
 
 ## HTTP authorization request headers
 
@@ -41,7 +41,7 @@ Complete the tasks listed in the following:
 * **SysdigTeamID**: The unique identification code for the Sysdig team that the IBM Cloud user or the service ID is part of. SysdigTeamID is an optional header. Specifying a team ID overrides the sysdig default team that the user automatically launched into.
 
 
-## Retreving the Sysdig team ID
+## Retrieving the Sysdig team ID
 
 ### Example request
 
@@ -51,7 +51,7 @@ The following POST (using cURL) command gets a list of teams and their IDs for a
 curl -v -H "Authorization: Bearer IBM_IAM_TOKEN_HERE"   -H "IBMInstanceID: INSTANCE_ID_HERE"   https://<region>-<host>.cloud.ibm.com/api/teams
 
 ```
-Replace <region> and <host> with the region and the hostname of your IBM Cloud. Replace IBM_IAM_TOKEN_HERE with your IAM token. Replace INSTANCE_ID_HERE with the ID of the Sysdig service.
+Replace <region> and <host> with the region and the hostname of your IBM Cloud. Replace IBM_IAM_TOKEN_HERE with your IAM token. Replace INSTANCE_ID_HERE with the ID of the Sysdig service instance.
 
 ### Example responses
 
